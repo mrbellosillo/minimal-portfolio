@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BusyBee — A cross-platform productivity app. RBJ Case Study." />
+  <title>BusyBee — RBJ Case Study</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800;900&family=Oswald:wght@400;500;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="busybee-page">
+
+  <div class="page-wrapper">
+
+    <!-- ================================================
+         HEADER (identical to homepage)
+         ================================================ -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">RBJ</a>
+
+        <nav class="nav-menus" id="nav-menus" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#work" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menus">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================================================
+         MAIN CONTENT BLOCK
+         ================================================ -->
+    <main class="main-content">
+        <nav class="project-sub-nav" id="projectSubNav">
+            <div class="sub-nav-container">
+                <span class="sub-nav-title">BusyBee</span>
+                <ul class="sub-nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#visuals">Visual Interface</a></li>
+                <li><a href="#problem">Problem & Solution</a></li>
+                <li><a href="#workflow">AI-Augmented Workflow</a></li>
+                <li><a href="#blueprint">The Blueprint</a></li>
+                <li><a href="#reflection">Reflection & Final Thoughts</a></li>
+                </ul>
+            </div>
+        </nav>
+      <div class="content-inner-casestudy">
+
+        <!-- ============================================
+             1. OVERVIEW
+             ============================================ -->
+        <section class="af-overview" id="overview" aria-label="Project Overview">
+
+          <!-- Left Side: Intro + CTA -->
+          <div class="af-left-side">
+            <div class="af-intro">
+              <p class="af-eyebrow">Productivity</p>
+              <h1 class="af-title">BUSYBEE</h1>
+              <p class="af-desc">A warm, honey-themed planner built to reduce task anxiety using a responsive desktop grid and mobile vertical stack to separate work from school goals.</p>
+
+              <!-- Portrait photo (positioned to the right of intro) -->
+              <div class="af-photo-badge">
+                <img src="minimalist portfolio/busybee overview.png" alt="busybee" />
+              </div>
+            </div>
+
+            <a href="https://www.figma.com/proto/rEooFxZewGD3MkYZwDXvD5/BusyBee?page-id=189%3A1237&node-id=189-1332&viewport=-541%2C102%2C0.48&t=zlc0l7klEfLmLG60-1&scaling=contain&content-scaling=fixed&starting-point-node-id=189%3A1332" target="_blank" class="cta-btn-green">View Prototype</a>
+          </div>
+
+          <!-- Right Side: Role/Duration Crossword -->
+          <div class="af-right-side">
+
+            <!-- Crossword: 5 DAYS (↓ col 5, rows 0–4) × UI/UX-DESIGNER (→ row 1, cols 0–12) -->
+            <!-- Cell size: 35×35px. Grid: 13 cols × 5 rows = 455×175px -->
+            <div class="af-crossword" role="img" aria-label="Crossword: 5 DAYS down, UI/UX DESIGNER across">
+
+              <!-- 5 DAYS — Down, column 5 (left=175px), rows 0–4 -->
+              <div class="af-xw-cell" style="left:245px; top:-35px;">
+                <span class="af-xw-num">1</span>
+                <span class="af-xw-letter">3</span>
+              </div>
+              <div class="af-xw-cell" style="left:245px; top:0px;">
+                <span class="af-xw-letter">D</span>
+              </div>
+              <div class="af-xw-cell" style="left:245px; top:35px;">
+                <span class="af-xw-letter">A</span>
+              </div>
+              <div class="af-xw-cell" style="left:245px; top:70px;">
+                <span class="af-xw-letter">Y</span>
+              </div>
+              <div class="af-xw-cell" style="left:245px; top:105px;">
+                <span class="af-xw-letter">S</span>
+              </div>
+
+              <!-- UI/UX — Across, row 1 (top=35px), cols 0–4 (left 0–140px) -->
+              <div class="af-xw-cell" style="left:0px; top:105px;">
+                <span class="af-xw-num">2</span>
+                <span class="af-xw-letter">U</span>
+              </div>
+              <div class="af-xw-cell" style="left:35px; top:105px;">
+                <span class="af-xw-letter">I</span>
+              </div>
+              <div class="af-xw-cell" style="left:70px; top:105px;">
+                <span class="af-xw-letter">/</span>
+              </div>
+              <div class="af-xw-cell" style="left:105px; top:105px;">
+                <span class="af-xw-letter">U</span>
+              </div>
+              <div class="af-xw-cell" style="left:140px; top:105px;">
+                <span class="af-xw-letter">X</span>
+              </div>
+              <div class="af-xw-cell" style="left:175px; top:105px;">
+                <span class="af-xw-letter">D</span>
+              </div>
+              <div class="af-xw-cell" style="left:210px; top:105px;">
+                <span class="af-xw-letter">E</span>
+              </div>
+              <div class="af-xw-cell" style="left:280px; top:105px;">
+                <span class="af-xw-letter">I</span>
+              </div>
+              <div class="af-xw-cell" style="left:315px; top:105px;">
+                <span class="af-xw-letter">G</span>
+              </div>
+              <div class="af-xw-cell" style="left:350px; top:105px;">
+                <span class="af-xw-letter">N</span>
+              </div>
+              <div class="af-xw-cell" style="left:385px; top:105px;">
+                <span class="af-xw-letter">E</span>
+              </div>
+              <div class="af-xw-cell" style="left:420px; top:105px;">
+                <span class="af-xw-letter">R</span>
+              </div>
+
+              <!-- ESIGNER — Across, row 1, cols 6–12 (left 210–420px, after shared D at col 5) -->
+
+            </div><!-- /.af-crossword -->
+
+            <!-- Crossword Hints -->
+            <div class="hint">
+              <div class="hint-group">
+                <p class="hint-label">// Across</p>
+                <ol class="hint-list" start="2">
+                  <li>Role</li>
+                </ol>
+              </div>
+              <div class="hint-group">
+                <p class="hint-label">// Down</p>
+                <ol class="hint-list" start="1">
+                  <li>Duration</li>
+                </ol>
+              </div>
+            </div>
+
+          </div><!-- /.af-right-side -->
+        </section><!-- /.af-overview -->
+
+        <!-- ============================================
+             2. VISUAL INTERFACE (High Fidelity)
+             ============================================ -->
+        <section aria-label="Visual Interface" id="visuals">
+          <div class="visual-interface-panel">
+
+            <div class="vi-header">
+              <div class="vi-header-left">
+                <p class="vi-label">// HIGH FIDELITY</p>
+                <h2 class="vi-title">Visual Interface</h2>
+              </div>
+              <p class="vi-desc">The outcome of a structured design process. I lead with the interface, followed by the systematic logic that built it.</p>
+            </div>
+
+            <div class="phone-screens">
+              <!-- Row 1: Splash, Dashboard, Goal Detail -->
+              <div class="phone-row">
+                <div class="phone-screen-lg">
+                  <img src="minimalist portfolio/busybee splash screen.png" alt="BusyBee splash screen" loading="lazy" />
+                </div>
+                <div class="phone-screen-lg">
+                  <img src="minimalist portfolio/busybee mobile dashboard pt1.png" alt="BusyBee dashboard screen" loading="lazy" />
+                </div>
+                <div class="phone-screen-lg">
+                  <img src="minimalist portfolio/busybee mobile dashboard pt2.png" alt="BusyBee dashboard screen" loading="lazy" />
+                </div>
+              </div>
+
+              <!-- Row 2: FaceID, Success (centred) -->
+              <div class="phone-row-center">
+                <div class="phone-screen-lg">
+                  <img src="minimalist portfolio/busybee mobile empty state pt1.png" alt="BusyBee empty state screen" loading="lazy" />
+                </div>
+                <div class="phone-screen-lg">
+                  <img src="minimalist portfolio/busybee mobile empty state pt2.png" alt="BusyBee empty state screen" loading="lazy" />
+                </div>
+              </div>
+              
+              <div class="desktop-row">
+                <div>
+                  <img src="minimalist portfolio/busybee (4).png" alt="Busybee Dashboard" loading="lazy" />
+                </div>
+                <div>
+                  <img src="minimalist portfolio/busybee (5).png" alt="BusyBee Empty State" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================
+             3. PROBLEM & SOLUTION
+             ============================================ -->
+        <section class="ps-section" aria-label="Problem and Solution" id="problem">
+          <div class="ps-header">
+            <p class="ps-eyebrow">// THE_BRIEF</p>
+            <h2 class="ps-heading">Problem &amp; Solution</h2>
+          </div>
+
+          <div class="ps-grid">
+            <div class="ps-col-p">
+              <h3 class="ps-col-title">The Problem</h3>
+              <p class="ps-col-text">Most to-do list apps feel like cold, industrial spreadsheets. For students and freelancers juggling multiple roles, </br>staring at a massive, unorganized text list causes visual confusion and &lsquo;task anxiety&rsquo; that makes them avoid </br>planning altogether.</p>
+            </div>
+
+            <div class="ps-col">
+              <h3 class="ps-col-title">The Solution</h3>
+              <p class="ps-col-text"><strong>BUSYBEE:</strong> A warm, honey-themed dashboard that replaces clinical lists with organized Bento cards, semantic colors to separate work from life, and progress trackers that give a small boost of visual satisfaction.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================
+             4. METHODOLOGY (AI-Augmented Workflow)
+             ============================================ -->
+        <section class="methodology-section" aria-label="AI-Augmented Workflow" id="workflow">
+          <div class="ps-header">
+            <p class="ps-eyebrow">// METHODOLOGY</p>
+            <h2 class="ps-heading">AI-Augmented Workflow</h2>
+          </div>
+
+          <div class="process-steps-row" role="list">
+
+            <div class="process-step-card" role="listitem">
+              <span class="process-step-num">01</span>
+              <p class="process-step-title">Strategy &amp; Psychology</p>
+              <div class="process-tags">
+                <span class="process-tag">Research</span>
+                <span class="process-tag">Persona</span>
+              </div>
+            </div>
+
+            <div class="process-step-card" role="listitem">
+              <span class="process-step-num">02</span>
+              <p class="process-step-title">Architecture &amp; Logic</p>
+              <div class="process-tags">
+                <span class="process-tag">User Flow</span>
+                <span class="process-tag">Wireframes</span>
+              </div>
+            </div>
+
+            <div class="process-step-card" role="listitem">
+              <span class="process-step-num">03</span>
+              <p class="process-step-title">Visual Identity &amp; System</p>
+              <div class="process-tags">
+                <span class="process-tag">Moodboard</span>
+                <span class="process-tag">Tokens</span>
+              </div>
+            </div>
+
+            <div class="process-step-card" role="listitem">
+              <span class="process-step-num">04</span>
+              <p class="process-step-title">Systematic Execution</p>
+              <div class="process-tags">
+                <span class="process-tag">Components</span>
+                <span class="process-tag">Auto-Layout</span>
+              </div>
+            </div>
+
+            <div class="process-step-card" role="listitem">
+              <span class="process-step-num">05</span>
+              <p class="process-step-title">Interaction Design</p>
+              <div class="process-tags">
+                <span class="process-tag">States</span>
+                <span class="process-tag">Prototype</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================
+             5. THE BLUEPRINT
+             ============================================ -->
+        <section class="blueprint-section" aria-label="The Blueprint" id="blueprint">
+
+          <!-- Blueprint Title -->
+          <div class="blueprint-title-block" style="margin-bottom: 32px;">
+            <p class="blueprint-eyebrow">// THE_EVIDENCE</p>
+            <h2 class="blueprint-heading">The Blueprint</h2>
+          </div>
+
+          <!-- Blueprint Sub-sections (each separated by a green divider) -->
+          <div class="blueprint-sections">
+
+            <!-- 5a. USER PERSONA -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">USER PERSONA</h3>
+                <p class="af-subsection-desc">
+                  I focused on <strong>Alex</strong>, a freelancer and student who finds traditional productivity tools cold and overwhelming. She doesn't need a corporate project manager or complex sub-menus; she needs a warm, uncluttered space that separates her school and work identities into clear visual cards, making daily organization feel like a small, satisfying win.
+                </p>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:28px;">
+                <div>
+                  <p style="font-family:var(--h4-font-family); font-weight:700; font-size:25px; letter-spacing:-0.175px; line-height:36px; color:var(--neutral-30);">
+                    Meet the &lsquo;Multi-Hyphenate&rsquo; Freelancer: <span class="af-accent">Alex</span>
+                  </p>
+                </div>
+                <div class="af-image-card-fixed">
+                  <img src="minimalist portfolio/User Persona busybee.png" alt="Alex user persona diagram" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 5b. USER FLOW -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">USER FLOW</h3>
+                <p class="af-subsection-desc">
+                  I designed a user flow that eliminates navigation friction. Because the mobile <strong>FAB</strong> and desktop button are permanently visible on the dashboards, users can type, tag, and organize school versus work goals in a single view.
+                </p>
+              </div>
+              <div class="af-flow-image-card">
+                <img src="minimalist portfolio/user flow for busybee.png" alt="User flow diagram" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 5c. IDEATION & WIREFRAMING -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">IDEATION &amp; WIREFRAMING</h3>
+                <p class="af-subsection-desc">
+                  I started with sketches focused on <strong>scannability</strong> to keep the dashboard organized across screen sizes. 
+                  <br /><br />
+                  This led to a <strong>responsive structure</strong> in Figma where I tested the layout logic before moving to high-fidelity design.
+                </p>
+              </div>
+
+              <div class="wireframe-panel">
+                <!-- Sketches row -->
+                <div class="sketch-row">
+                  <div class="sketch-card">
+                    <img src="minimalist portfolio/busybee sketch 1.jpg" alt="Sketch 1" loading="lazy" />
+                  </div>
+                  <div class="sketch-card-desktop">
+                    <img src="minimalist portfolio/busybee sketch 2.jpg" alt="Sketch 2" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Mid-fi wireframes row -->
+                <div class="midfi-row">
+                  <div class="midfi-phone">
+                    <img src="minimalist portfolio/busybee mobile wireframe.png" alt="Wireframe: mobile" loading="lazy" />
+                  </div>
+                  <div class="midfi-desktop">
+                    <img src="minimalist portfolio/busybee desktop wireframe.png" alt="Wireframe: desktop" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5d. DESIGN TOKENS -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">DESIGN TOKENS</h3>
+                <p class="af-subsection-desc">
+                  I chose warm <strong>honey-gold brand colors</strong> paired with a <strong>functional indigo secondary</strong> to provide clear visual separation between work and school tasks.
+                  <br /><br />
+                  For typography, I used <strong>Plus Jakarta Sans</strong>—its friendly, modern proportions ensure that shifting between roles remains approachable and easy to scan.
+                  <br /><br />
+                  Every choice, from the <strong>CTAs</strong> to the <strong>gradient-stroke priority cards</strong>, was made to turn a chaotic 'brain swarm' into a focused, calm productivity experience.
+                </p>
+              </div>
+
+              <div class="tokens-panel">
+                <div class="tokens-inner">
+
+                  <!-- Color System -->
+                  <div>
+                    <p class="tokens-subsection-title">Color System</p>
+                    <div class="color-system-grid">
+
+                      <!-- Brand Colors -->
+                      <div class="color-group">
+                        <p class="color-group-label">BRAND COLORS</p>
+                        <div class="color-list">
+                          <div class="color-row">
+                            <div class="color-swatch" style="background:#FFB800;"></div>
+                            <div>
+                              <p class="color-info-name">--brand-<strong>primary</strong></p>
+                              <p class="color-info-hex">#FFB800</p>
+                            </div>
+                          </div>
+                          <div class="color-row">
+                            <div class="color-swatch" style="background:#5D5FEF;"></div>
+                            <div>
+                              <p class="color-info-name">--brand-<strong>secondary</strong></p>
+                              <p class="color-info-hex">#5D5FEF</p>
+                            </div>
+                          </div>
+                          <div class="color-row">
+                            <div class="color-swatch" style="background: linear-gradient(135deg, #FF1F01, #FFC700);"></div>
+                            <div>
+                              <p class="color-info-name">--brand-<strong>accent</strong></p>
+                              <p class="color-info-hex">#FF1F01 - #FFC700</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Neutrals / Grays -->
+                      <div class="color-group">
+                        <p class="color-group-label">NEUTRALS/GRAYS</p>
+                        <div class="double-row">
+                          <div class="color-list">
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#FDFCFB;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-<strong>bg</strong></p>
+                                <p class="color-info-hex">#FDFCFB</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#F7F6F2;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-<strong>sub-borders</strong></p>
+                                <p class="color-info-hex">#F7F6F2</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#EFEDE9;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-200</p>
+                                <p class="color-info-hex">#EFEDE9</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#E1DFD9;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-300</p>
+                                <p class="color-info-hex">#E1DFD9</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#B8B6B0;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-400</p>
+                                <p class="color-info-hex">#B8B6B0</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#82807A;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-<strong>borders</strong></p>
+                                <p class="color-info-hex">#82807A</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="color-list">
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#666460;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-600></p>
+                                <p class="color-info-hex">#666460</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#4E4D49;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-700</p>
+                                <p class="color-info-hex">#4E4D49</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#393834;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-800</p>
+                                <p class="color-info-hex">#393834</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#292824;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-<strong>titles</strong></p>
+                                <p class="color-info-hex">#292824</p>
+                              </div>
+                            </div>
+                            <div class="color-row">
+                              <div class="color-swatch" style="background:#4E4D49;"></div>
+                              <div>
+                                <p class="color-info-name">--gray-<strong>dark-text</strong></p>
+                                <p class="color-info-hex">#4E4D49</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!-- /.color-system-grid -->
+                  </div>
+
+                  <!-- Typography & Logo -->
+                  <div class="typo-logo-row">
+
+                    <!-- Typography Scale -->
+                    <div class="typography-block">
+                      <p class="tokens-subsection-title">Typography Scale</p>
+                      <div class="typography-image-card">
+                        <img src="minimalist portfolio/typography scale busybee.png" alt="BusyBee typography scale" loading="lazy" />
+                      </div>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="logo-block">
+                      <p class="tokens-subsection-title" style="align-self:flex-start;">Logo</p>
+                      <div class="logo-dark-card">
+                        <!-- Logo concept images -->
+                        <div class="logo-concept-row">
+                          <div class="logo-concept-item">
+                            <img src="minimalist portfolio/busybee concept logo.png" alt="Logo concept generation" loading="lazy" />
+                            <p class="logo-concept-label">CONCEPT GENERATION</p>
+                          </div>
+                          <div class="logo-concept-item">
+                            <img src="minimalist portfolio/busybee vector logo.png" alt="Logo manual vectorization" loading="lazy" style="object-fit:contain;" />
+                            <p class="logo-concept-label">MANUAL VECTORIZATION</p>
+                          </div>
+                        </div>
+
+                        <!-- Final wordmark -->
+                        <div class="logo-final-row">
+                          <div class="logo-final-badge">
+                            <img src="minimalist portfolio/busybee logo with wordmark.png" alt="BusyBee wordmark logo" loading="lazy" />
+                          </div>
+                          <p class="logo-final-caption">For the logo, I used AI to explore a wide range of visual directions in a short amount of time. Once I found a concept that matched the vibe, I vectorized and refined it to ensure it was precise and scalable.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div><!-- /.typo-logo-row -->
+
+                </div><!-- /.tokens-inner -->
+              </div><!-- /.tokens-panel -->
+            </div>
+
+            <!-- 5e. MOODBOARDING -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">MOODBOARDING</h3>
+                <p class="af-subsection-desc">
+                  I used AI to quickly spin up a 3x3 moodboard to pin down our visual direction early. I grouped these into nine core pillars to make sure the final look balanced <strong>industrious efficiency with a warm, mindful feel.</strong>
+                </p>
+              </div>
+              <div class="af-image-card">
+                <img src="minimalist portfolio/BusyBee moodboard.png" alt="BusyBee moodboard" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 5f. COMPONENTS -->
+            <div class="af-subsection">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">COMPONENTS</h3>
+                <p class="af-subsection-desc">
+                  I built a library of cross-platform components and interactive states to ensure the experience remains completely consistent from Desktop to Mobile. 
+                  <br /><br />
+                  I used <strong>Bento-style widgets</strong> and progress rings to provide immediate visual feedback and clear scannability. By implementing a <strong>1.5px priority stroke</strong>, I ensured that urgent tasks immediately draw the eye while secondary planning tools stay subtle.
+                  <br /><br />
+                  Using a modular system of color tags and quick-add buttons makes switching between 'Work' and 'School' tasks completely effortless.
+                </p>
+              </div>
+              <div class="af-image-card">
+                <img src="minimalist portfolio/Busybee components.png" alt="Busybee component library" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 5g. PROTOTYPING (last — no divider, has centered CTA) -->
+            <div class="af-subsection" style="border-bottom:none; padding-bottom:0; margin-bottom:0;">
+              <div class="af-subsection-header">
+                <h3 class="af-subsection-name">PROTOTYPING</h3>
+                <p class="af-subsection-desc">
+                  I turned my final designs into an interactive prototype to stress-test the task lifecycle. I mapped out four primary paths to balance visual scannability with rapid information capture:
+                </p>
+              </div>
+
+              <!-- Prototype description list -->
+              <ul style="font-family:var(--body-large-font-family); font-size:var(--body-large-font-size); line-height:var(--body-large-line-height); color:var(--neutral-30); list-style:disc; padding-left:24px; display:flex; flex-direction:column; gap:8px; width:531px; align-self:flex-end; margin-top:-60px;">
+                <li><strong>App Entrance:</strong> Setting up an automated screen transition that smoothly lands the user onto their centralized Bento layout.</li>
+                <li><strong>Layout Resilience:</strong> Testing the screen transition from the 'Quiet Hive' empty state to a dense task list to verify that grid spacing holds up under high data loads.</li>
+                <li><strong>The Entry Shortcut:</strong> A live test of the fast-capture shortcuts—utilizing the desktop 'Add New Task' block and mobile FAB to log reminders in a single view.</li>
+                <li><strong>Responsive Behavior:</strong> Reviewing the interface animations across both desktop and mobile viewports to ensure components look and act cohesively on any screen.</li>
+              </ul>
+
+              <div class="af-prototype-video-card">
+                    <video 
+                        src="minimalist portfolio/Busybee prototype.mp4" 
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline 
+                        poster="minimalist portfolio/busybee thumbnail.png">
+                    </video>
+                </div>
+
+              <div class="prototype-cta-wrap">
+                <a href="https://www.figma.com/proto/rEooFxZewGD3MkYZwDXvD5/BusyBee?page-id=189%3A1237&node-id=189-1332&viewport=-541%2C102%2C0.48&t=zlc0l7klEfLmLG60-1&scaling=contain&content-scaling=fixed&starting-point-node-id=189%3A1332" target="_blank" class="cta-btn-green">View Prototype</a>
+              </div>
+            </div>
+
+          </div><!-- /.blueprint-sections -->
+        </section>
+
+        <!-- ============================================
+             6. REFLECTION & FINAL THOUGHTS
+             ============================================ -->
+        <section class="reflection-section" aria-label="Reflection and Final Thoughts" id="reflection">
+          <div class="blueprint-title-block" style="margin-bottom: 32px;">
+            <p class="blueprint-eyebrow">// TAKEAWAYS</p>
+            <h2 class="blueprint-heading">Reflection &amp;<br />Final Thoughts</h2>
+          </div>
+
+          <div class="reflection-grid">
+
+            <!-- Top-left: Quote -->
+            <div class="reflection-cell rc-quote">
+              <p class="reflection-quote">
+                &ldquo;What began as a tight 3-day design constraint for <span class="af-accent">BusyBee</span> became my personal proof that speed doesn't have to break design logic or visual precision.&rdquo;
+              </p>
+            </div>
+
+            <!-- Top-right: What I Learned -->
+            <div class="reflection-cell rc-learn">
+              <div>
+                <span class="reflection-cell-title">What I Learned</span>
+                <p class="reflection-cell-text">
+                  This project was a crash course in designing under pressure. Building a complete brand identity and a cross-platform interface in just 72 hours taught me that a tight workflow is the only way to meet a heavy deadline. By locking into my 'Honey-tinted' palette and the 1.5px border system early on, I was able to design rapidly without losing the pixel-perfect quality the brief required. It proved to me that my process holds up even when the clock is ticking.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bottom-left: The Validation -->
+            <div class="reflection-cell rc-valid">
+              <div>
+                <span class="reflection-cell-title">The Validation</span>
+                <p class="reflection-cell-text">
+                  Even though this project was a take-home test for Frost Design Group, the real win was pushing my own limits. I wanted to prove I could balance creative layout design with strict technical organization. Seeing my design peers immediately understand the Bento structure and visual hierarchy was a huge boost to my confidence. It showed me that my skills are completely ready for the fast-paced, high-stakes environment of a real design agency.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bottom-right: What I'm Most Proud Of -->
+            <div class="reflection-cell rc-proud">
+              <div>
+                <span class="reflection-cell-title">What I&rsquo;m Most Proud Of</span>
+                <p class="reflection-cell-text">
+                  I’m incredibly proud of the discipline I maintained over those three intense days. Despite the rush, I didn't cut corners; I treated every layer name, component variant, and grid layout alignment with the accountability of a live product. I didn't just fill a checklist—I tried to add value by transforming a simple text-heavy list into a calm, mindful planning tool. Pushing this out right after completing Aura Finance showed me how much my speed and technical standards have grown.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- /.reflection-grid -->
+        </section>
+
+        <!-- ============================================
+             7. NEXT CASE STUDY
+             ============================================ -->
+        <section class="next-case-study-section" aria-label="Next case study">
+          <a href="aura-finance.html" class="next-case-study-banner" style="text-decoration: none; display: block;">
+            <div class="next-cs-content">
+              <div>
+                <p class="next-cs-label">Next Case Study:</p>
+                <p class="next-cs-name">Aura Finance</p>
+                <!-- CHANGED FROM <a> TO <span> TO PREVENT HTML BREAKAGE -->
+                <span class="next-cs-link">View Case Study &nbsp;&nbsp;⟶</span>
+              </div>
+              <img
+                src="minimalist portfolio/aura finance (2).png"
+                alt="Aura Finance case study preview"
+                class="next-cs-image"
+                loading="lazy"
+              />
+            </div>
+          </a>
+        </section>
+
+
+        <footer class="site-footer" aria-label="Contact and footer" style="margin-top: -40px;">
+
+      <!-- Decorative QR-code SVG patterns -->
+            <div class="deco-svg deco-tl" aria-hidden="true">
+                <svg viewBox="0 0 174.834 174.834" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M145.695 21.8543H101.987C97.98 21.8543 94.7019 25.1324 94.7019 29.139V87.4171C94.7019 91.4238 97.98 94.7019 101.987 94.7019H145.695C149.702 94.7019 152.98 91.4238 152.98 87.4171V29.139C152.98 25.1324 149.702 21.8543 145.695 21.8543ZM138.41 80.1324H109.271V36.4238H138.41V80.1324ZM72.8476 21.8543H29.139C25.1324 21.8543 21.8543 25.1324 21.8543 29.139V58.2781C21.8543 62.2847 25.1324 65.5629 29.139 65.5629H72.8476C76.8542 65.5629 80.1324 62.2847 80.1324 58.2781V29.139C80.1324 25.1324 76.8542 21.8543 72.8476 21.8543ZM65.5629 50.9933H36.4238V36.4238H65.5629V50.9933ZM145.695 109.271H101.987C97.98 109.271 94.7019 112.55 94.7019 116.556V145.695C94.7019 149.702 97.98 152.98 101.987 152.98H145.695C149.702 152.98 152.98 149.702 152.98 145.695V116.556C152.98 112.55 149.702 109.271 145.695 109.271ZM138.41 138.41H109.271V123.841H138.41V138.41ZM72.8476 80.1324H29.139C25.1324 80.1324 21.8543 83.4105 21.8543 87.4171V145.695C21.8543 149.702 25.1324 152.98 29.139 152.98H72.8476C76.8542 152.98 80.1324 149.702 80.1324 145.695V87.4171C80.1324 83.4105 76.8542 80.1324 72.8476 80.1324ZM65.5629 138.41H36.4238V94.7019H65.5629V138.41Z" fill="var(--brandprimary)" />
+                </svg>
+            </div>
+
+            <div class="deco-svg deco-ml" aria-hidden="true">
+                <svg viewBox="0 0 99.0884 99.0884" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M82.5736 12.386H57.8015C55.5308 12.386 53.6729 14.244 53.6729 16.5147V49.5442C53.6729 51.815 55.5308 53.6729 57.8015 53.6729H82.5736C84.8444 53.6729 86.7023 51.815 86.7023 49.5442V16.5147C86.7023 14.244 84.8444 12.386 82.5736 12.386ZM78.445 45.4155H61.9302V20.6434H78.445V45.4155ZM41.2868 12.386H16.5147C14.244 12.386 12.386 14.244 12.386 16.5147V33.0295C12.386 35.3002 14.244 37.1581 16.5147 37.1581H41.2868C43.5576 37.1581 45.4155 35.3002 45.4155 33.0295V16.5147C45.4155 14.244 43.5576 12.386 41.2868 12.386ZM37.1581 28.9008H20.6434V20.6434H37.1581V28.9008ZM82.5736 61.9302H57.8015C55.5308 61.9302 53.6729 63.7881 53.6729 66.0589V82.5736C53.6729 84.8444 55.5308 86.7023 57.8015 86.7023H82.5736C84.8444 86.7023 86.7023 84.8444 86.7023 82.5736V66.0589C86.7023 63.7881 84.8444 61.9302 82.5736 61.9302ZM78.445 78.445H61.9302V70.1876H78.445V78.445ZM41.2868 45.4155H16.5147C14.244 45.4155 12.386 47.2734 12.386 49.5442V82.5736C12.386 84.8444 14.244 86.7023 16.5147 86.7023H41.2868C43.5576 86.7023 45.4155 84.8444 45.4155 82.5736V49.5442C45.4155 47.2734 43.5576 45.4155 41.2868 45.4155ZM37.1581 78.445H20.6434V53.6729H37.1581V78.445Z" fill="var(--brandprimary)" />
+                </svg>
+            </div>
+
+            <div class="deco-svg deco-tr" aria-hidden="true">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M166.667 25H116.667C112.083 25 108.333 28.75 108.333 33.3333V100C108.333 104.583 112.083 108.333 116.667 108.333H166.667C171.25 108.333 175 104.583 175 100V33.3333C175 28.75 171.25 25 166.667 25ZM158.333 91.6667H125V41.6667H158.333V91.6667ZM83.3333 25H33.3333C28.75 25 25 28.75 25 33.3333V66.6667C25 71.25 28.75 75 33.3333 75H83.3333C87.9167 75 91.6667 71.25 91.6667 66.6667V33.3333C91.6667 28.75 87.9167 25 83.3333 25ZM75 58.3333H41.6667V41.6667H75V58.3333ZM166.667 125H116.667C112.083 125 108.333 128.75 108.333 133.333V166.667C108.333 171.25 112.083 175 116.667 175H166.667C171.25 175 175 171.25 175 166.667V133.333C175 128.75 171.25 125 166.667 125ZM158.333 158.333H125V141.667H158.333V158.333ZM83.3333 91.6667H33.3333C28.75 91.6667 25 95.4167 25 100V166.667C25 171.25 28.75 175 33.3333 175H83.3333C87.9167 175 91.6667 171.25 91.6667 166.667V100C91.6667 95.4167 87.9167 91.6667 83.3333 91.6667ZM75 158.333H41.6667V108.333H75V158.333Z" fill="var(--brandprimary)" />
+                </svg>
+            </div>
+
+            <div class="deco-svg deco-mr" aria-hidden="true">
+                <svg viewBox="0 0 71.5148 71.5148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.5957 8.93935H41.717C40.0781 8.93935 38.7372 10.2803 38.7372 11.9191V35.7574C38.7372 37.3963 40.0781 38.7372 41.717 38.7372H59.5957C61.2345 38.7372 62.5754 37.3963 62.5754 35.7574V11.9191C62.5754 10.2803 61.2345 8.93935 59.5957 8.93935ZM56.6159 32.7776H44.6967V14.8989H56.6159V32.7776ZM29.7978 8.93935H11.9191C10.2803 8.93935 8.93935 10.2803 8.93935 11.9191V23.8383C8.93935 25.4771 10.2803 26.818 11.9191 26.818H29.7978C31.4367 26.818 32.7776 25.4771 32.7776 23.8383V11.9191C32.7776 10.2803 31.4367 8.93935 29.7978 8.93935ZM26.818 20.8585H14.8989V14.8989H26.818V20.8585ZM59.5957 44.6967H41.717C40.0781 44.6967 38.7372 46.0376 38.7372 47.6765V59.5957C38.7372 61.2345 40.0781 62.5754 41.717 62.5754H59.5957C61.2345 62.5754 62.5754 61.2345 62.5754 59.5957V47.6765C62.5754 46.0376 61.2345 44.6967 59.5957 44.6967ZM56.6159 56.6159H44.6967V50.6563H56.6159V56.6159ZM29.7978 32.7776H11.9191C10.2803 32.7776 8.93935 34.1185 8.93935 35.7574V59.5957C8.93935 61.2345 10.2803 62.5754 11.9191 62.5754H29.7978C31.4367 62.5754 32.7776 61.2345 32.7776 59.5957V35.7574C32.7776 34.1185 31.4367 32.7776 29.7978 32.7776ZM26.818 56.6159H14.8989V38.7372H26.818V56.6159Z" fill="var(--brandprimary)" />
+                </svg>
+            </div>
+
+            <!-- Footer Content -->
+            <div class="footer-inner" id="contacts">
+
+                <div class="footer-headline-group">
+                <p class="footer-eyebrow">READY TO BUILD SOMETHING INTENTIONAL?</p>
+                <h2 class="footer-headline">Let&rsquo;s Connect!</h2>
+                </div>
+
+                <div class="footer-ctas">
+                <a href="#" class="btn-filled">Resume</a>
+                <a href="https://www.linkedin.com/in/mrbellosillo/" class="btn-outline-sm" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+
+                <div class="other-socials">
+                <div class="social-row">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M3.33333 3.33333H12C12.5304 3.33333 13.0391 3.54405 13.4142 3.91912C13.7893 4.29419 14 4.8029 14 5.33333V11.3333C14 11.8638 13.7893 12.3725 13.4142 12.7475C13.0391 13.1226 12.5304 13.3333 12 13.3333H3.33333C2.8029 13.3333 2.29419 13.1226 1.91912 12.7475C1.54405 12.3725 1.33333 11.8638 1.33333 11.3333V5.33333C1.33333 4.8029 1.54405 4.29419 1.91912 3.91912C2.29419 3.54405 2.8029 3.33333 3.33333 3.33333ZM3.33333 4C3 4 2.70667 4.11333 2.48 4.31333L7.66667 7.66667L12.8533 4.31333C12.6267 4.11333 12.3333 4 12 4H3.33333ZM7.66667 8.47333L2.08667 4.85333C2.03333 5 2 5.16667 2 5.33333V11.3333C2 11.687 2.14048 12.0261 2.39052 12.2761C2.64057 12.5262 2.97971 12.6667 3.33333 12.6667H12C12.3536 12.6667 12.6928 12.5262 12.9428 12.2761C13.1929 12.0261 13.3333 11.687 13.3333 11.3333V5.33333C13.3333 5.16667 13.3 5 13.2467 4.85333L7.66667 8.47333Z" fill="var(--neutral-40)" />
+                    </svg>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rbellosillojr@gmail.com" target="_blank" rel="noopener noreferrer">rbellosillojr@gmail.com</a>
+                </div>
+
+                <div class="social-row">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 1.33333C7.12452 1.33333 6.25761 1.50577 5.44878 1.8408C4.63994 2.17583 3.90501 2.6669 3.28595 3.28595C2.03571 4.5362 1.33333 6.23189 1.33333 8C1.33333 10.9467 3.24667 13.4467 5.89333 14.3333C6.22667 14.3867 6.33333 14.18 6.33333 14V12.8733C4.48667 13.2733 4.09333 11.98 4.09333 11.98C3.78667 11.2067 3.35333 11 3.35333 11C2.74667 10.5867 3.4 10.6 3.4 10.6C4.06667 10.6467 4.42 11.2867 4.42 11.2867C5 12.3 5.98 12 6.36 11.84C6.42 11.4067 6.59333 11.1133 6.78 10.9467C5.3 10.78 3.74667 10.2067 3.74667 7.66667C3.74667 6.92667 4 6.33333 4.43333 5.86C4.36667 5.69333 4.13333 5 4.5 4.1C4.5 4.1 5.06 3.92 6.33333 4.78C6.86 4.63333 7.43333 4.56 8 4.56C8.56667 4.56 9.14 4.63333 9.66667 4.78C10.94 3.92 11.5 4.1 11.5 4.1C11.8667 5 11.6333 5.69333 11.5667 5.86C12 6.33333 12.2533 6.92667 12.2533 7.66667C12.2533 10.2133 10.6933 10.7733 9.20667 10.94C9.44667 11.1467 9.66667 11.5533 9.66667 12.1733V14C9.66667 14.18 9.77333 14.3933 10.1133 14.3333C12.76 13.44 14.6667 10.9467 14.6667 8C14.6667 7.12452 14.4942 6.25761 14.1592 5.44878C13.8242 4.63994 13.3331 3.90501 12.714 3.28595C12.095 2.6669 11.3601 2.17583 10.5512 1.8408C9.74239 1.50577 8.87548 1.33333 8 1.33333Z" fill="var(--neutral-40)" />
+                    </svg>
+                    <a href="https://github.com/mrbellosillo" target="_blank" rel="noopener noreferrer">github.com/mrbellosillo</a>
+                </div>
+                </div>
+
+                <p class="footer-credit">
+                    <span class="credit-unbold">V1.0 // Designed &amp; Engineered by</span> Richard Bellosillo Jr.
+                </p>
+
+            </div><!-- /.footer-inner -->
+        </footer><!-- /.site-footer -->
+
+      </div><!-- /.content-inner -->
+    </main><!-- /.main-content -->
+
+    <!-- ================================================
+         FOOTER (identical to homepage)
+         ================================================ -->
+    
+    <button id="back-to-top" class="fab-back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+    </button>
+  </div><!-- /.page-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
