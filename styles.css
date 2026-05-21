@@ -2637,11 +2637,11 @@ font-style: var(--body-large-semibold-font-style);
        At scale 0.5 → rendered 488px wide × 44px tall.
        margin-bottom reclaims ghost space: -(88 × (1 - 0.5)) = -44px */
     transform: scale(0.3);
-    transform-origin: left;
+    transform-origin: center;
     width: 976px;  /* must stay at original — transform does the scaling */
     height: 88px;  /* must stay at original */
     margin-bottom: -44px;
-    margin-left: -70px; /* shift left to compensate for page padding */
+    margin-left: -80px; /* shift left to compensate for page padding */
     overflow: hidden; /* clips any bleed on very small screens */
   }
 
