@@ -912,172 +912,6 @@ ol, ul {
   transform: translateY(0);
 }
 
-/* Responsive adjust for mobile */
-@media (max-width: 768px) {
-  .fab-back-to-top {
-    bottom: 24px;
-    right: 24px;
-    width: 44px;
-    height: 44px;
-  }
-}
-
-/* =====================================================
-   RESPONSIVE — TABLET (≤1200px)
-   ===================================================== */
-@media (max-width: 1200px) {
-  .hero-section {
-    gap: 60px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .name-block {
-    width: 100%;
-    align-items: center;
-  }
-
-  .crossword-name {
-    transform: scale(0.85);
-    transform-origin: top center;
-    margin-bottom: -60px;
-  }
-
-  .intro-block {
-    width: 100%;
-    max-width: 560px;
-  }
-
-  .case-study {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .case-study-info {
-    width: 100%;
-    max-width: 520px;
-  }
-
-  .mockup-preview {
-    width: 100%;
-    max-width: 720px;
-    height: 380px;
-  }
-}
-
-/* =====================================================
-   RESPONSIVE — MOBILE (≤768px)
-   ===================================================== */
-@media (max-width: 768px) {
-  .page-wrapper {
-    padding: 0px 16px 40px;
-  }
-
-  .header-inner {
-    padding: 0 20px;
-  }
-
-  .nav-menus {
-    display: none;
-    position: absolute;
-    top: 96px;
-    left: 0;
-    right: 0;
-    background: var(--neutralmain-bg);
-    flex-direction: column;
-    gap: 0;
-    padding: 12px 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 99;
-  }
-
-  .nav-menus.open {
-    display: flex;
-  }
-
-  .nav-link {
-    padding: 12px 24px;
-    width: 100%;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .main-content {
-    padding: 27px 24px 14px;
-  }
-
-  .content-inner {
-    gap: 80px;
-  }
-
-  .hero-section {
-    gap: 40px;
-  }
-
-  .crossword-name {
-    transform: scale(0.6);
-    transform-origin: top left;
-    margin-bottom: -170px;
-  }
-
-  .name-block {
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .hint {
-    gap: 40px;
-  }
-
-  .intro-block {
-    width: 100%;
-  }
-
-  .case-study-info {
-    width: 100%;
-    gap: 32px;
-  }
-
-  .mockup-preview {
-    height: 240px;
-  }
-
-  .case-studies-list {
-    gap: 64px;
-  }
-
-  .selected-work-section {
-    gap: 60px;
-  }
-
-  .section-title {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1px;
-  }
-
-  .case-study-title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .footer-headline {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1px;
-  }
-
-  .deco-tl,
-  .deco-ml,
-  .deco-tr,
-  .deco-mr {
-    display: none;
-  }
-}
-
 /* =====================================================
    NAV TOGGLE — Active State
    ===================================================== */
@@ -2632,66 +2466,1183 @@ font-style: var(--body-large-semibold-font-style);
   z-index: 2;
 }
 
-
-/* Responsive Structural Refinement for Smaller viewports */
-@media (max-width: 992px) {
-  .story-row,
-  .story-row--text-first {
-    flex-direction: column-reverse;
-    gap: 48px;
-    align-items: flex-start;
-  }
-  
-  .story-text {
-    max-width: 100%;
-  }
-  
-  .story-image-wrap,
-  .drive-photos {
-    width: 100%;
-    max-width: 380px;
-    height: 380px;
-    margin: 0 auto;
-  }
+/* Desktop — outside any media query */
+.about-crossword {
+  position: relative;
+  width: 976px;  /* 888px left + 88px cell width = rightmost edge */
+  height: 88px;  /* single row height */
 }
-
-
 
 /* =====================================================
-   RESPONSIVE OVERRIDES — AURA FINANCE
+   RESPONSIVE — MOBILE (≤768px)
+   Complete override block — replace any existing
+   @media (max-width: 768px) blocks with this one.
    ===================================================== */
-@media (max-width: 1200px) {
-  .af-overview     { flex-wrap: wrap; gap: 60px; justify-content: center; }
-  .af-intro        { width: 100%; max-width: 560px; }
-  .af-right-side   { width: 100%; max-width: 560px; }
-  .af-crossword    { transform: scale(0.85); transform-origin: top left; margin-bottom: -30px; }
-  .ps-grid         { flex-wrap: wrap; }
-  .ps-col          { max-width: 100%; }
-  .af-subsection-header { flex-wrap: wrap; gap: 24px; align-items: flex-start; }
-  .af-subsection-desc   { width: 100%; text-align: left; }
-  .typo-logo-row   { flex-wrap: wrap; }
-  .color-system-grid    { flex-wrap: wrap; }
-  .next-cs-content { position: relative; top: auto; transform: none;
-                     flex-wrap: wrap; gap: 24px; padding: 32px; left: auto; right: auto; }
-  .next-case-study-banner { height: auto; min-height: 200px; }
-}
-
+/* =====================================================
+   RESPONSIVE — MOBILE (≤768px)
+   FINAL VERSION — single block, no duplicates.
+   Replace ALL existing @media (max-width: 768px)
+   blocks in your CSS with this one file.
+   ===================================================== */
 @media (max-width: 768px) {
-  .af-crossword    { transform: scale(0.6); transform-origin: top left; margin-bottom: -70px; }
-  .phone-row, .phone-row-center { flex-wrap: wrap; justify-content: center; }
-  .phone-screen-lg { width: 180px; height: 364px; }
-  .visual-interface-panel { padding: 40px 24px; border-radius: 24px; }
-  .process-steps-row { overflow-x: auto; }
-  .process-step-card { min-width: 140px; }
-  .tokens-panel    { padding: 24px; }
-  .tokens-inner    { max-width: 100%; }
-  .typography-image-card { width: 100%; height: auto; }
-  .logo-block      { width: 100%; }
-  .rc-quote, .rc-learn, .rc-valid, .rc-proud { width: 100%; border-right: none; }
-  .reflection-grid { border: 0.5px solid var(--neutral-80); }
-  .wireframe-panel { padding: 24px 16px; }
-  .sketch-card img { width: 100px; height: 133px; }
-  .af-overview {
-    margin-top: 47px; /* Reduces the gap on mobile for better visibility */
+
+  /* ─────────────────────────────────────────────
+     PAGE WRAPPER
+  ───────────────────────────────────────────── */
+  .page-wrapper {
+    padding: 0px 16px 20px;
+    overflow-x: hidden;
   }
+
+  /* ─────────────────────────────────────────────
+     HEADER
+  ───────────────────────────────────────────── */
+  .site-header {
+    height: 72px;
+  }
+
+  .header-inner {
+    padding: 0 8px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Header hide behavior — full slide on mobile */
+  .site-header.header-hidden,
+  .home-page .site-header.header-hidden,
+  .about-page .site-header.header-hidden {
+    transform: translateY(-100%);
+  }
+
+  /* ─────────────────────────────────────────────
+     NAVIGATION
+  ───────────────────────────────────────────── */
+  .nav-menus {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--neutralmain-bg);
+    flex-direction: column;
+    gap: 0;
+    padding: 16px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    border-bottom: 1px solid var(--neutral-90);
+  }
+
+  .nav-menus.open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 16px 32px;
+    width: 100%;
+    display: block;
+    line-height: 24px;
+  }
+
+  /* Remove desktop underline animation on mobile menu */
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ─────────────────────────────────────────────
+     MAIN CONTENT BLOCKS
+  ───────────────────────────────────────────── */
+  .main-content,
+  .main-content-about {
+    padding: 32px 20px 20px;
+    margin-top: 12px;
+    border-radius: 6px;
+  }
+
+  .main-content::before {
+    background-size: 24px 24px;
+    opacity: 0.25;
+  }
+
+  .content-inner {
+    gap: 80px;
+  }
+
+  .content-inner-about {
+    gap: 72px;
+  }
+
+  .content-inner-casestudy {
+    gap: 56px;
+  }
+
+  /* ─────────────────────────────────────────────
+     HERO SECTION
+  ───────────────────────────────────────────── */
+  .hero-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* ─────────────────────────────────────────────
+     HOMEPAGE CROSSWORD (.xw-cell inside .crossword-name)
+  ───────────────────────────────────────────── */
+  .name-block {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .crossword-name {
+    /* Scale the whole grid down as a unit.
+       Desktop size: 510px wide × 420px tall (10 cols × 7 rows, 51×60px each).
+       At scale 0.5 → rendered 255px wide × 210px tall.
+       margin-bottom reclaims the ghost space: -(420 × (1 - 0.5)) = -210px */
+    transform: scale(0.5);
+    transform-origin: top left;
+    align-self: flex-start;
+    width: 510px;  /* must stay at original size — transform does the scaling */
+    height: 420px; /* must stay at original size */
+    margin-bottom: -210px;
+    /* Do NOT override .xw-cell or .xw-letter here —
+       transform:scale handles all children automatically */
+  }
+
+  /* xw-period is absolutely positioned with desktop px values.
+     Since it lives INSIDE .crossword-name, it scales with the parent.
+     No override needed — leave it alone. */
+
+  /* ─────────────────────────────────────────────
+     ABOUT PAGE CROSSWORD (.cell inside .about-crossword)
+  ───────────────────────────────────────────── */
+  .about-crossword {
+    /* Desktop size: rightmost cell ends at 888 + 88 = 976px wide, 88px tall.
+       At scale 0.5 → rendered 488px wide × 44px tall.
+       margin-bottom reclaims ghost space: -(88 × (1 - 0.5)) = -44px */
+    transform: scale(0.3);
+    transform-origin: left;
+    width: 976px;  /* must stay at original — transform does the scaling */
+    height: 88px;  /* must stay at original */
+    margin-bottom: -44px;
+    margin-left: -70px; /* shift left to compensate for page padding */
+    overflow: hidden; /* clips any bleed on very small screens */
+  }
+
+  /* ─────────────────────────────────────────────
+     HINTS
+  ───────────────────────────────────────────── */
+  .hint {
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .hint-group {
+    flex: 1;
+    max-width: 160px;
+  }
+
+  .hint-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .hint-list {
+    font-size: 13px;
+    line-height: 18px;
+    gap: 6px;
+  }
+
+  /* ─────────────────────────────────────────────
+     INTRO / BIO BLOCK
+  ───────────────────────────────────────────── */
+  .intro-block {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 1;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .photo-frame {
+    width: 140px;
+    height: 140px;
+    border-width: 3px;
+  }
+
+  .photo-frame img {
+    max-width: none;
+    object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+
+  .bio-text {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center; /* center only if photo-frame is centered above */
+  }
+
+  /* ─────────────────────────────────────────────
+     SELECTED WORK SECTION
+  ───────────────────────────────────────────── */
+  .selected-work-section {
+    gap: 48px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+
+  .case-studies-list {
+    gap: 48px;
+  }
+
+  .case-study {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .case-study-info {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 1;
+    gap: 20px;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .case-study-meta {
+    width: 100%;
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .case-study-type {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .case-study-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .mockup-preview {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    flex-shrink: 1;
+  }
+
+  .mockup-preview img {
+    object-fit: cover;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  /* ─────────────────────────────────────────────
+     FOOTER
+  ───────────────────────────────────────────── */
+  .site-footer {
+    max-width: 100%;
+    padding: 40px 0;
+  }
+
+  .footer-inner {
+    gap: 32px;
+  }
+
+  .footer-headline-group {
+    gap: 20px;
+  }
+
+  .footer-headline {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+
+  .footer-ctas {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .btn-filled,
+  .btn-outline-sm {
+    width: 100%;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+  }
+
+  .other-socials {
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .social-row {
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .social-row a,
+  .social-row span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .deco-svg,
+  .deco-tl,
+  .deco-ml,
+  .deco-tr,
+  .deco-mr {
+    display: none;
+  }
+
+  .footer-credit {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ─────────────────────────────────────────────
+     BACK TO TOP FAB
+  ───────────────────────────────────────────── */
+  .fab-back-to-top {
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ─────────────────────────────────────────────
+     PROJECT SUB-NAV
+  ───────────────────────────────────────────── */
+  .project-sub-nav {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    border-radius: 0;
+    height: 44px;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .project-sub-nav.is-active {
+    top: 0;
+    transform: translateX(0);
+    display: none;
+  }
+
+  .sub-nav-container {
+    padding: 0;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .sub-nav-title {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .sub-nav-links {
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .sub-nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sub-nav-links a {
+    font-size: 10px;
+    padding: 6px 4px;
+    display: inline-block;
+  }
+
+  /* ─────────────────────────────────────────────
+     CASE STUDY — OVERVIEW
+  ───────────────────────────────────────────── */
+  .af-overview {
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 4px;
+  }
+
+  .af-left-side {
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .af-intro {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .af-photo-badge,
+  .qr-track-page .af-photo-badge,
+  .busybee-page .af-photo-badge {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 16px auto 0 auto;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+
+  .af-photo-badge:hover {
+    transform: scale(1.2);
+  }
+
+  .af-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 8px;
+  }
+
+  .af-desc {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 16px;
+  }
+
+  .cta-btn-green {
+    width: 100%;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+  }
+
+  .af-right-side {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 1;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .aura-finance-page .hint {
+    margin-top: -80px;
+  }
+
+  .af-crossword {
+    transform: scale(0.55);
+    transform-origin: top left;
+    max-width: 100%;
+  }
+
+  .af-xw-letter {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  /* ─────────────────────────────────────────────
+     VISUAL INTERFACE PANEL
+  ───────────────────────────────────────────── */
+  .visual-interface-panel {
+    padding: 40px 16px;
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .vi-header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .vi-header-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .vi-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .vi-desc {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .phone-screens,
+  .phone-row,
+  .busybee-page .desktop-row {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone-row > *,
+  .desktop-row > * {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .phone-row-center {
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .phone-screen-lg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1 / 2;
+    border-radius: 28px;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  /* ─────────────────────────────────────────────
+     PROBLEM & SOLUTION
+  ───────────────────────────────────────────── */
+  .ps-section {
+    width: 100%;
+    max-width: 100%;
+    gap: 24px;
+    align-self: flex-start;
+  }
+
+  .ps-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .ps-grid {
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .ps-col,
+  .ps-col-p {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .ps-col-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .ps-col-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* ─────────────────────────────────────────────
+     METHODOLOGY — PROCESS STEPS
+  ───────────────────────────────────────────── */
+  .methodology-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 24px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .process-steps-row {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .process-step-card {
+    width: 100% !important;
+    height: auto;
+    flex: none;
+    box-sizing: border-box !important;
+    
+    /* 1. Remove all rounded corners and outer box borders */
+    border-radius: 0 !important; 
+    border: none !important;
+    
+    /* 2. Apply only the subtle bottom border line */
+    border-bottom: 1px solid var(--neutral-80) !important; 
+    
+    /* 3. Adjust padding so content sits comfortably above the underline */
+    padding: 24px 0 16px 0 !important; 
+  }
+
+  /* Remove any desktop adjacent border overrides that would break the vertical flow */
+  .process-step-card + .process-step-card {
+    border-top: none !important;
+  }
+  .process-step-card:first-child,
+  .process-step-card:last-child {
+    border-radius: 0 !important;
+  }
+
+  /* Remove the bottom border on the very last step to keep the baseline completely clean */
+  .process-step-card:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .process-step-num {
+    top: 10px;
+    left: 12px;
+    font-size: 11px;
+  }
+
+  .process-step-title {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .process-tags {
+    gap: 6px;
+    width: 100%;
+  }
+
+  .process-tag {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  /* ─────────────────────────────────────────────
+     BLUEPRINT SECTION
+  ───────────────────────────────────────────── */
+  .blueprint-section {
+    width: 100%;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .blueprint-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .af-subsection {
+    gap: 32px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .af-subsection-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .af-subsection-name {
+    font-size: 20px;
+    line-height: 28px;
+    white-space: normal;
+  }
+
+  .af-subsection-desc {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+    flex-shrink: 1;
+  }
+
+  /* ─────────────────────────────────────────────
+     IMAGE CARDS
+  ───────────────────────────────────────────── */
+  .af-image-card-fixed img,
+  .busybee-page .af-image-card-fixed img,
+  .af-flow-image-card img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  .components-stats-img {
+    gap: 24px;
+  }
+
+  /* ─────────────────────────────────────────────
+     WIREFRAME PANEL
+  ───────────────────────────────────────────── */
+  .wireframe-panel,
+  .qr-track-page .wireframe-panel {
+    padding: 24px 16px;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .wireframes {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .sketch-row {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .sketch-card,
+  .sketch-card-desktop {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .sketch-card img,
+  .sketch-card-desktop img,
+  .sketch-card-small img,
+  .qr-track-page .sketch-card img,
+  .busybee-page .sketch-card img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .sketch-card-small {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .midfi-row {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .midfi-phone {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    aspect-ratio: 166 / 361;
+  }
+
+  .midfi-desktop {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 507 / 361;
+    border-radius: 6px;
+  }
+
+  /* ─────────────────────────────────────────────
+     DESIGN TOKENS PANEL
+  ───────────────────────────────────────────── */
+  .tokens-panel {
+    padding: 32px 16px;
+    width: 100%;
+  }
+
+  .tokens-inner {
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tokens-subsection-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .color-system-grid,
+  .busybee-page .color-system-grid,
+  .busybee-page .double-row {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .color-group {
+    gap: 16px;
+    width: 100%;
+  }
+
+  .color-group-label {
+    font-size: 16px;
+    line-height: 22px;
+    border-bottom: 1px solid var(--neutral-80);
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+  }
+
+  .color-list {
+    gap: 12px;
+  }
+
+  .color-row {
+    gap: 16px;
+  }
+
+  .color-swatch {
+    width: 48px;
+    height: 48px;
+  }
+
+  .typo-logo-row {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .typography-block {
+    width: 100%;
+  }
+
+  .typography-image-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 451 / 493;
+  }
+
+  .typography-image-card img,
+  .busybee-page .typography-image-card img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-block {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .logo-dark-card {
+    height: auto;
+    padding: 32px 16px;
+    gap: 36px;
+    width: 100%;
+  }
+
+  .logo-concept-row {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo-concept-item {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .logo-concept-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 172 / 188;
+  }
+
+  .logo-final-row {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .logo-final-badge {
+    width: 100%;
+    max-width: 220px;
+    padding: 12px 16px;
+  }
+
+  .logo-final-caption {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .components-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .components-stats .frame {
+    width: 100%;
+  }
+
+  /* ─────────────────────────────────────────────
+     PROTOTYPE VIDEO CARD
+  ───────────────────────────────────────────── */
+  .af-prototype-video-card {
+    height: auto;
+    /* No fixed aspect-ratio — let the video's natural dimensions dictate height */
+  }
+
+  .af-prototype-video-card video {
+    width: 100%;
+    height: auto; /* auto, not 100%, so the video isn't squashed inside a ratio box */
+    display: block;
+  }
+
+  /* ─────────────────────────────────────────────
+     REFLECTION GRID
+  ───────────────────────────────────────────── */
+  .reflection-section {
+    width: 100%;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .reflection-grid {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reflection-cell,
+  .qr-track-page .reflection-cell {
+    padding: 24px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .rc-quote, .rc-learn, .rc-valid, .rc-proud,
+  .qr-track-page .rc-quote, .qr-track-page .rc-learn,
+  .qr-track-page .rc-valid, .qr-track-page .rc-proud,
+  .busybee-page .rc-quote, .busybee-page .rc-learn,
+  .busybee-page .rc-valid, .busybee-page .rc-proud {
+    border-right: none;
+    border-bottom: 1px solid var(--neutral-80);
+    width: 100%;
+    min-height: auto;
+  }
+
+  .rc-proud,
+  .qr-track-page .rc-proud,
+  .busybee-page .rc-proud {
+    border-bottom: none;
+  }
+
+  .reflection-quote {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .reflection-cell-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .reflection-cell-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* ─────────────────────────────────────────────
+     NEXT CASE STUDY BANNER
+  ───────────────────────────────────────────── */
+  .next-case-study-section {
+    margin-top: 64px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  .next-case-study-banner {
+    height: auto;
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  .next-cs-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-items: flex-start; /* left-align all children */
+    text-align: left;
+  }
+
+  .previews {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .next-cs-label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .next-cs-name {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 8px;
+  }
+
+  .next-cs-image,
+  .next-cs-image-mobile,
+  .busybee-page .next-cs-image {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.85;
+  }
+
+  /* ─────────────────────────────────────────────
+     ABOUT PAGE — STORY SECTIONS
+  ───────────────────────────────────────────── */
+  .story-sections,
+  .story-section {
+    gap: 56px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .story-row,
+  .story-row--text-first {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .story-text {
+    max-width: 100%;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .section-label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .body-large {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .story-image-wrap,
+  .story-image-wrap-works {
+    width: 100%;       /* fluid, not fixed 280px — works on all phone sizes */
+    max-width: 280px;  /* caps at 280px on wider phones */
+    height: 280px;
+    margin: 0 auto;
+    flex-shrink: 1;
+    outline-width: 3px;
+  }
+
+  /* ─────────────────────────────────────────────
+     ABOUT PAGE — DRIVE COLLAGE
+  ───────────────────────────────────────────── */
+  .drive-photos {
+    width: 100%;
+    max-width: 300px;
+    height: 296px;
+    margin: 12px auto 0 auto;
+    flex-shrink: 1;
+  }
+
+  .drive-photo-square {
+    width: 64%;
+    height: 64%;
+    outline-width: 3px;
+  }
+
+  .drive-photo-circular {
+    width: 58%;
+    height: 58%;
+    outline-width: 3px;
+  }
+
+  ul[style*="width:531px"],
+  ul[style*="margin-top:-60px"] {
+    width: 100% !important; /* Overrides the rigid 531px layout bottleneck */
+    max-width: 100% !important;
+    
+    margin-top: 16px !important; /* Replaces the overlapping -60px lift with a clean, supportive top gap */
+    padding-left: 20px !important; /* Tightens list indent spacing slightly to preserve horizontal screen space */
+    font-size: 15px !important; /* Ensures bullet point text remains legible on mobile screens */
+    line-height: 22px !important;
+    
+    align-self: flex-start !important; /* Re-anchors the bullet list to the left edge to align with standard mobile reading patterns */
+    gap: 12px !important; /* Expands the spacing between touch items slightly for easier legibility on mobile screens */
+  }
+  
+
 }
+/* ── END @media (max-width: 768px) ── */
